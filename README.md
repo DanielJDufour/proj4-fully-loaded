@@ -22,7 +22,7 @@ const proj4 = require("proj4-fully-loaded");
 const pointIn4326 = [-85.3097, 35.0456];
 
 // EPSG:32617 is automatically included in proj4-fully-loaded
-const pointInUTM = proj4("EPSG:4326", "EPSG:32617").forward(point);
+const pointInUTM = proj4("EPSG:4326", "EPSG:32617").forward(pointIn4326);
 // pointInUTM is [106823.88325412886, 3886600.558377227]
 ```
 
@@ -38,7 +38,7 @@ proj4.defs("EPSG:32617", "+proj=utm +zone=17 +datum=WGS84 +units=m +no_defs");
 
 const pointIn4326 = [-85.3097, 35.0456];
 
-const pointInUTM = proj4("EPSG:4326", "EPSG:32617").forward(point);
+const pointInUTM = proj4("EPSG:4326", "EPSG:32617").forward(pointIn4326);
 // pointInUTM is [106823.88325412886, 3886600.558377227]
 ```
 
