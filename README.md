@@ -9,7 +9,7 @@ npm install -S proj4-fully-loaded
 # motivation
 One of the most popular questions I hear from users of [georaster](https://github.com/geotiff/georaster)
 is how do I use a GeoTIFF that's in UTM or another projection not included in the default build of proj4.
-I've created this library, so users can use [georaster](https://github.com/geotiff/georaster)
+I've created this library, so users can use [georaster](https://github.com/geotiff/georaster) and [georaster-layer-for-leaflet](https://github.com/geotiff/georaster-layer-for-leaflet) 
 without worrying about how to find and load the projection information for their data.
 
 # usage
