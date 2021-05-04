@@ -1,0 +1,42 @@
+{
+  "name": "proj4-fully-loaded",
+  "version": "0.0.0",
+  "description": "Proj4JS Projector Fully Loaded with Projections",
+  "main": "proj4-fully-loaded.js",
+  "files": [
+    "proj4-fully-loaded.js"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielJDufour/proj4-fully-loaded.git"
+  },
+  "keywords": [
+    "coordinate",
+    "crs",
+    "geospatial",
+    "gis",
+    "proj4",
+    "proj4js",
+    "projection",
+    "projections",
+    "reference",
+    "srs",
+    "system"
+  ],
+  "author": "Daniel J. Dufour",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/DanielJDufour/proj4-fully-loaded/issues"
+  },
+  "homepage": "https://github.com/DanielJDufour/proj4-fully-loaded#readme",
+  "devDependencies": {
+    "flug": "*"
+  },
+  "dependencies": {
+    "proj4": "^2.7.2",
+    "proj4js-definitions": "^0.1.0"
+  }
+}
