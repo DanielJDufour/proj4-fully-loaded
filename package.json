@@ -1,6 +1,6 @@
 {
   "name": "proj4-fully-loaded",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Proj4JS Projector Fully Loaded with Projections",
   "main": "proj4-fully-loaded.js",
   "files": [
