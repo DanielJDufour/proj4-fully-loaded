@@ -31,6 +31,7 @@ For your reference, here is the way to do the above with the proj4-fully-loaded 
 const proj4 = require("proj4-fully-loaded");
 
 // find and load projection specific definition
+// taken from http://epsg.io/32617
 proj4.defs("EPSG:32617", "+proj=utm +zone=17 +datum=WGS84 +units=m +no_defs");
 
 const pointIn4326 = [-85.3097, 35.0456];
@@ -38,3 +39,13 @@ const pointIn4326 = [-85.3097, 35.0456];
 const pointInUTM = proj4("EPSG:4326", "EPSG:32617").forward(point);
 // pointInUTM is [106823.88325412886, 3886600.558377227]
 ```
+
+# what about file size?
+One of the inevitable questions will be, "don't you increase your bundle size by loading all this projection information?"  This is a very valid question.  This library (as compared to vanilla proj4) should only
+increase your bundle size by about 175 Kilobytes.  If you are creating a library or application that
+supports multiple projections, please consider using this library and evaluating if the trade off is worth it.
+If you are building something that supports just one specific projection, you probably want to save size
+and load projection information using the approach above.
+
+# support
+If you have any questions or comments, please post an issue [here](https://github.com/DanielJDufour/proj4-fully-loaded/issues) or email me at daniel.j.dufour@gmail.com
