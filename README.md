@@ -21,14 +21,16 @@ const proj4 = require("proj4-fully-loaded");
 
 const pointIn4326 = [-85.3097, 35.0456];
 
+// EPSG:32617 is automatically included in proj4-fully-loaded
 const pointInUTM = proj4("EPSG:4326", "EPSG:32617").forward(point);
 // pointInUTM is [106823.88325412886, 3886600.558377227]
 ```
 
-# old way
-For your reference, here is the way to do the above with the proj4-fully-loaded library:
+# manual way
+For your reference, here is the way to manually load the projection information
+without the proj4-fully-loaded library.
 ```javascript
-const proj4 = require("proj4-fully-loaded");
+const proj4 = require("proj4");
 
 // find and load projection specific definition
 // taken from http://epsg.io/32617
