@@ -7,7 +7,9 @@
     "proj4-fully-loaded.js"
   ],
   "scripts": {
-    "test": "node test.js"
+    "test:cjs": "node test.js",
+    "test:mjs": "node test.mjs",
+    "test": "npm run test:cjs && npm run test:mjs"
   },
   "repository": {
     "type": "git",
@@ -32,11 +34,11 @@
     "url": "https://github.com/DanielJDufour/proj4-fully-loaded/issues"
   },
   "homepage": "https://github.com/DanielJDufour/proj4-fully-loaded#readme",
-  "devDependencies": {
-    "flug": "*"
-  },
   "dependencies": {
     "proj4": "^2.7.2",
     "proj4js-definitions": "^0.1.0"
+  },
+  "devDependencies": {
+    "flug": "^2.1.0"
   }
 }
