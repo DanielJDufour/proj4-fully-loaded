@@ -8,4 +8,12 @@ if (typeof proj4 === "object" && typeof proj4.defs !== "function" && typeof proj
 
 proj4.defs(defs);
 
-module.exports = proj4;
+if (typeof define === "function" && define.amd) {
+  define(function() { return proj4; });
+}
+
+if (typeof module === "object") {
+  module.exports = proj4;
+  module.exports.default = proj4;
+}
+

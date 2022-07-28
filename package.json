@@ -9,7 +9,8 @@
   "scripts": {
     "test:cjs": "node test.js",
     "test:mjs": "node test.mjs",
-    "test": "npm run test:cjs && npm run test:mjs"
+    "test:ts": "npx ts-node ./test.ts",
+    "test": "npm run test:cjs && npm run test:mjs && npm run test:ts"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,6 @@
     "proj4js-definitions": "^0.1.0"
   },
   "devDependencies": {
-    "flug": "^2.1.0"
+    "flug": "^2.3.1"
   }
 }
