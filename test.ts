@@ -1,4 +1,5 @@
 import test from "flug";
+// @ts-ignore
 import proj4 from "./proj4-fully-loaded.js";
 
 const point = [-85.3097, 35.0456];
