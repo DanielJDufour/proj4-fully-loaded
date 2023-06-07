@@ -4,8 +4,10 @@
   "description": "Proj4JS Projector Fully Loaded with Projections",
   "main": "proj4-fully-loaded.js",
   "files": [
-    "proj4-fully-loaded.js"
+    "proj4-fully-loaded.js",
+    "proj4-fully-loaded.d.ts"
   ],
+  "types": "proj4-fully-loaded.d.ts",
   "scripts": {
     "test:cjs": "node test.js",
     "test:mjs": "node test.mjs",
@@ -40,6 +42,7 @@
     "proj4js-definitions": "^0.1.0"
   },
   "devDependencies": {
+    "@types/proj4": "^2.5.2",
     "flug": "^2.3.1"
   }
 }
